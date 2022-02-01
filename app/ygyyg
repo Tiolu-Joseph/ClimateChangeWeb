@@ -1,0 +1,313 @@
+function myFunction() {     
+  
+    // Gets the various data from the HTML formvar status = document.getElementById("submit");
+    var status = document.getElementById("submit");
+    var status2 = document.getElementById("submit2");
+  
+    // Push both the captured form data up to the 5th Years branch of the database with labels (purple)
+    feebackBranch.push({ Yes: status.value, No: status2.value});
+
+    // Display a message to let user know the upload has been successful
+    alert("Thank you for your feedback, the following has been added to the database - " + status.value || + status2.value)
+
+} 
+
+
+
+
+
+    <label>Was this information useful?: </label> 
+      <input type="radio" name="sumbit" value="sumbit"> Yes
+      <input type="radio" name="sumbit2" value="sumbit2"> No
+      <input type="button" onclick="myFunction()" value="Submit"/>
+  
+  var rootRef = firebase.database.ref();
+var urlRef = rootRef.child("user1/DAA Notes/URL");
+urlRef.once("value", function(snapshot) {
+  snapshot.forEach(function(child) {
+    console.log(child.key+": "+child.val());
+  });
+});
+
+
+
+
+// Create the connection to the specific 'table'
+    var myDBConn = firebase.database().ref().child('sealevels');
+    var rootRef = firebase.database().ref().child('feedback');
+
+  <script src="/script.js" defer></script>
+  
+.lool {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 10%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.lool::-ms-expand {
+    display: none;
+}
+.lool:hover {
+    border-color: #888;
+}
+.lool:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.lool option {
+    font-weight:normal;
+}
+  
+  
+<img src="https://www.hayward-ca.gov/sites/default/files/CLOUD%20%282%29.png" alt="Trulli" width="500" height="333">
+
+
+function FusionChartCreate(number){  
+  chartchoice = document.getElementById("chartchoice").value;  
+  FusionCharts.ready(function(){ 
+        var fusioncharts = new FusionCharts({
+          // Specifics of graph type
+          type: chartchoice, 
+          renderAt: "chart-container2",
+          width: '100%',
+          height: '100%',
+          dataFormat: 'json',
+          // More specifics
+          dataSource: {
+            // Chart Configuration
+            "chart": {
+              "borderColor": "#DDA0DD",
+              "borderThickness": "4",
+              "borderAlpha": "80",
+              "yAxisNameFont": "Arial",
+              "yAxisNameFontSize": "19",
+              "yAxisNameFontColor": "#993300",
+              "yAxisNameFontBold": "1",
+              "yAxisNameFontItalic": "1",
+              "xAxisNameFont": "Arial",
+              "xAxisNameFontSize": "19",
+              "xAxisNameFontColor": "#993300",
+              "xAxisNameFontBold": "1",
+              "xAxisNameFontItalic": "1",
+              "rotateLabels": "0",
+              "labelDisplay": "wrap",
+              "showBorder": "10",
+              "caption": "Global Temperature Analysis",
+              "captionFontSize": "25",
+              "captionFontColor": "#00000",
+              "subCaption": "-Climate Change-",
+              "xAxisName": "Years",
+              "yAxisName": "GM Sea Level",
+              "theme": "fusion",
+                
+              
+            },
+            // Chart Data set to be the Results from Firebase
+            "data": SearchResults,
+            "trendlines": [
+              
+                {
+                  
+                    "line": [
+                        {
+                            "color": "#e44a00",
+                            "displayvalue": "Average Temperature",
+                            "valueOnRight": "1",
+                            "thickness": "4",
+                        }
+                    ]
+                }
+            ]
+         }      
+        });
+
+        // Render the charts
+        fusioncharts.render();
+    });
+  
+   <label class="chosechartdata">Sea Levels</label>
+    <select class="tempdata" id="gmsl">
+        <option value="gmsl" id="gmsl">gmsl</option>
+        </select>
+        
+        
+        
+     <label class="detailss">Picture Representation </label> <input type="button" id="SubmitiPic" value="Picture" onclick= "myShowPic()"><br>
+        <img class="pic"  id="image01" src="https://www.hayward-ca.gov/sites/default/files/CLOUD%20%282%29.png" style="display:none" >
+        
+      function myShowPic() {
+var myimg = document.getElementById("image01").src
+document.getElementById("image01").style.display="block";
+}
+
+ myDBConn1.on("child_added",function(data, prevChildKey){
+        console.log(data.val());
+
+         // The data returned from the branch is put into a variable, dataPoint
+        var dataPoint = data.val();
+
+        // Populate the Years lists with the various data from the Firebase
+   
+       //// yearTemp.push(dataPoint["Year"]);
+        tempValue.push(dataPoint["AverageTemperatureFahr"]);
+   
+   
+        var x1 = document.getElementById("Year1");
+        var option1 = document.createElement("option");
+        option1.text = dataPoint["Year"];
+        option1.value = dataPoint["Year"];
+        x1.add(option1);
+
+       // create a new select option for every ending year  
+        var x2 = document.getElementById("Year2");
+        var option2 = document.createElement("option");
+        option2.text = dataPoint["Year"];
+        option2.value = dataPoint["Year"];
+        option2.selected = true; //makes the last one selected
+        x2.add(option2);
+   
+   document.getElementById("test").innerHTML = yearTemp[1]
+  
+  
+  <label class="chosechart">Choose Countries</label>
+          <select class="lool" id="co2contries">
+          <option value="all">Line</option>
+          <option value="UNITED KINGDOM">Bar Chart 2D</option>
+          <option value="UNITED STATES OF AMERICA">UNITED STATES OF AMERICA</option>
+          </select><br>
+          
+          
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(255,255,255,0);
+  font-family:'Poppins', sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+https://www.itl.cat/pngfile/big/212-2125878_landscape-portrait-material-design-wallpapers-red.jpg
+
+("https://coolbackgrounds.io/images/backgrounds/black/black-radial-gradient-bb05ed79.jpg")
+
+https://images.hdqwalls.com/wallpapers/red-dead-redemption-2-minimal-4k-gd.jpg"
+
+https://i.redd.it/nl8fczkpsbu31.png
+
+
+example1 {
+  background-image: url("https://www.itl.cat/pngfile/big/212-2125878_landscape-portrait-material-design-wallpapers-red.jpg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(255,255,255,0);
+  font-family:'Poppins', sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.overlay{
+  color:#000;
+  width:
+}
+
+.line{
+  width:120px;
+  height:3px;
+  background color: white;
+  
+}
+
+<ul>
+      <li><a>𝔗𝔍</a></li>
+      <li><a class="logo">109997</a></li>
+      <li><a class="active1" href="about.html">About</a></li>
+      <li><a class="active2" href="charts.html">Charts</a></li>
+      <li><a class="active3" href="index.html">Home</a></li>
+      
+    </ul></div>
+    
+    
+    position: absolute;
+    left: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    
+    
+    
+    link html with diff CSS for different backhorunfds
+    
+    https://66.media.tumblr.com/a8891850bcb1036dff69a8d8c6322154/tumblr_pne66cIIWY1v64288_1280.png
+    
+    https://i.imgur.com/TlmVE6d.jpg
+    
+    https://cdn.dribbble.com/users/158919/screenshots/5221805/astronaut_on_moon-04.png
+    
+    https://cdn3.vectorstock.com/i/1000x1000/28/92/galaxy-outer-space-background-vector-21532892.jpg
+    
+    https://c7.uihere.com/files/430/275/673/ultra-violet-galactic-background-free-vector.jpg
+    
+    https://cdn.dribbble.com/users/4334000/screenshots/9179554/media/ef209a9ecce287c24c266ecf128664b5.jpg
+    
+    https://www.pixel4k.com/wp-content/uploads/2018/10/forset-landscape-artwork-4k_1540751323.jpg

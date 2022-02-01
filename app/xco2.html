@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>109997 CS PROJECT!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sytyyle44.css" />
+
+    <!-- Include fusioncharts core library -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- Include fusion theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="js/themes/fusioncharts.theme.zune.js"></script>
+    <script type="text/javascript" src="js/themes/fusioncharts.theme.candy.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <!-- import the webpage's javascript file -->
+    <!-- Include fusion theme -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase.js"></script>
+    <script src="/scripta2.js" defer></script>
+    
+  </head>
+  <body>  
+    <div>
+      <ul id="menu">
+      <li><a>𝔗𝔍</a></li>
+      <li><a class="logo">109997</a></li>
+      <li><a class="active3" href="index.html">Home</a></li>
+      <li><a class="active1" href="about.html">AbOUT</a></li>
+      <li><a class="active2" href="charts.html">Charts</a></li>
+      </ul></div>
+    <div class="headingSL">
+      <span class="titleSSL">Gas</span>
+      </div>
+      <br><br><br><br>
+      <hr style="border: 4px solid white;" /><br>
+      <label class="strtyear">Select Start Year: </label>&nbsp;    <select class="gawd" id="Year1A"></select><br><br>
+       <label class="lastyear">Select Last Year: </label>&nbsp;    <select id="Year2A"></select><br><br>
+    
+        <label class="chosechart">Choose Chart Display:</label>&nbsp;  <select class="lool" id="chartchoice">
+          <option value="line">Line</option>
+          <option value="column2d">Bar Chart 2D</option>
+          <option value="pie2d">Pie 2D</option>
+          <option value="doughnut2d">Doughnut 2D</option>
+          <option value="pareto2d">Pareto 2D</option>
+          <option value="scatter">Scatter</option>
+          </select><br><br>
+          <label class="showgr">Click To Show: </label>&nbsp;<input class="sumbitbbt" type="button" id="Submit" value="Submit" onclick="generategraph()"><br><br>
+          <label class="detailss">Information Analysis</label> &nbsp;<input type="button" id="Submitinfo" value="Details" onclick= "myShowinfo()"><br>
+          
+          <hr style="border: 4px solid white;" />
+          <div class="grph" id="chart-container1" onclick="generategraph()"></div>
+          <p class = "sealeveltxt1" id="sealeveltxt"></p>
+    
+  </body>
+</html>
